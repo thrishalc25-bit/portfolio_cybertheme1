@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thrishalc Poojary | Cyberpunk Game Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading-screen">
+  <div class="load-container">
+    <h1 class="boot-text">SYSTEM BOOTING...</h1>
+    <div class="loading-bar"><div class="progress"></div></div>
+    <p class="boot-lines">
+      &gt; Initializing UI...<br />
+      &gt; Loading Assets...<br />
+      &gt; Establishing Secure Connection...<br />
+      &gt; Verifying Identity: <span class="highlight">Thrishalc C Poojary</span>...<br />
+      &gt; Boot Complete ✔
+    </p>
+  </div>
+</div>
+
+<!-- BACKGROUND CANVAS -->
+<canvas id="matrix-canvas"></canvas>
+
+<!-- SCANLINES -->
+<div class="scanlines"></div>
+
+<!-- MUSIC BUTTON -->
+<button id="music-btn" title="Toggle Music">🔊</button>
+<audio id="bgm" loop src="https://free-stock-music.com/media/audio/jiglr-cyberpunk.mp3"></audio>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- NAVIGATION -->
+<nav class="cyber-nav">
+  <div class="logo">TCP</div>
+  <ul>
+    <li><a href="#about" class="nav-btn">ABOUT</a></li>
+    <li><a href="#skills" class="nav-btn">SKILLS</a></li>
+    <li><a href="#projects" class="nav-btn">PROJECTS</a></li>
+    <li><a href="#contact" class="nav-btn">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="terminal">
+      <p class="t-line">&gt; ACCESSING PROFILE...</p>
+      <p class="t-line">&gt; DECRYPTING DATA...</p>
+      <p class="t-type">&gt; USER: <span class="highlight">THRISHAL C POOJARY</span></p>
+    </div>
+    <a href="#projects" class="cyber-btn">ENTER SYSTEM</a>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section holo-box floating-panel">
+  <h2 class="section-title glitch" data-text="ABOUT ME">ABOUT ME</h2>
+  <p>
+    I'm <b>Thrishalc C Poojary</b>, a BCA student passionate about
+    <span class="neon">Game Development</span>, 
+    <span class="neon">Cyber Security</span>, and Linux.
+    Creator of a <b>Python QR Code Generator</b> and multiple projects.
+    I build tech with futuristic vibes and immersive experiences.
+  </p>
+  <div class="xp-bars">
+    <div class="xp">
+      <label>GAME DEVELOPMENT</label>
+      <div class="bar"><div style="width:50%"></div></div>
+    </div>
+    <div class="xp">
+      <label>CYBER SECURITY</label>
+      <div class="bar"><div style="width:68%"></div></div>
+    </div>
+    <div class="xp">
+      <label>LINUX</label>
+      <div class="bar"><div style="width:80%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section holo-box floating-panel">
+  <h2 class="section-title glitch" data-text="SKILLS">SKILLS</h2>
+  <div class="skills-grid">
+    <span>Python</span><span>Java</span><span>HTML</span><span>CSS</span>
+    <span>JavaScript</span><span>C</span><span>C++</span><span>Linux</span>
+    <span>Cyber Security</span><span>Game Dev Concepts</span>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section holo-box floating-panel">
+  <h2 class="section-title glitch" data-text="PROJECT ARCHIVES">PROJECT ARCHIVES</h2>
+  <div class="project-card">
+    <h3>QR Code Generator (Python)</h3>
+    <p>Generates QR codes for text or URLs using Python libraries. Fast and practical.</p>
+  </div>
+  <div class="project-card">
+    <h3>Linux Sandbox</h3>
+    <p>A personal Linux playground for scripts, networking, and OS tinkering.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section holo-box floating-panel">
+  <h2 class="section-title glitch" data-text="CONTACT TERMINAL">CONTACT TERMINAL</h2>
+  <div class="contact-container">
+    <form action="https://formspree.io/f/mblnpwnr" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="ENTER NAME..." required />
+      <input type="email" name="email" placeholder="ENTER EMAIL..." required />
+      <textarea name="message" placeholder="YOUR MESSAGE..." rows="6" required></textarea>
+      <button type="submit" class="cyber-btn">TRANSMIT</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 TCP | Blue Cyberpunk Interface v1.0</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
